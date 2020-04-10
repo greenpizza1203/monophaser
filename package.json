@@ -1,5 +1,5 @@
 {
-  "name": "phaser",
+  "name": "monophaser",
   "version": "3.22.0",
   "release": "Kohaku",
   "description": "A fast, free and fun HTML5 Game Framework for Desktop and Mobile web browsers.",
@@ -12,7 +12,7 @@
   "types": "./types/phaser.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://photonstorm@github.com/photonstorm/phaser.git"
+    "url": "https://photonstorm@github.com/greenpizza1203/monophaser.git"
   },
   "scripts": {
     "beta": "npm publish --tag beta",

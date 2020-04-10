@@ -5,17 +5,13 @@
  */
 
 /**
- * @namespace Phaser.Renderer
- */
-
-/**
- * @namespace Phaser.Types.Renderer
+ * @namespace Phaser.Physics.Impact.Events
  */
 
 module.exports = {
 
-    Canvas: require('./canvas'),
-    // Snapshot: require('./snapshot'),
-    WebGL: require('./webgl')
+    COLLIDE: require('./COLLIDE_EVENT'),
+    PAUSE: require('./PAUSE_EVENT'),
+    RESUME: require('./RESUME_EVENT')
 
 };

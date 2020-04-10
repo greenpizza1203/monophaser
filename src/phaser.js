@@ -34,16 +34,16 @@ var Phaser = {
     Input: require('./input'),
     Loader: require('./loader'),
     Math: require('./math'),
-    Physics: require('./physics'),
+    // Physics: require('./physics'),
     Plugins: require('./plugins'),
     Renderer: require('./renderer'),
     Scale: require('./scale'),
     ScaleModes: require('./renderer/ScaleModes'),
     Scene: require('./scene/Scene'),
     Scenes: require('./scene'),
-    Structs: require('./structs'),
+    // Structs: require('./structs'),
     Textures: require('./textures'),
-    Tilemaps: require('./tilemaps'),
+    // Tilemaps: require('./tilemaps'),
     Time: require('./time'),
     Tweens: require('./tweens'),
     Utils: require('./utils')
@@ -52,23 +52,23 @@ var Phaser = {
 
 //  Merge in the optional plugins
 
-if (typeof FEATURE_SOUND)
-{
-    Phaser.Sound = require('./sound');
-}
-
-if (typeof PLUGIN_CAMERA3D)
-{
-    Phaser.Cameras.Sprite3D = require('../plugins/camera3d/src');
-    Phaser.GameObjects.Sprite3D = require('../plugins/camera3d/src/sprite3d/Sprite3D');
-    Phaser.GameObjects.Factories.Sprite3D = require('../plugins/camera3d/src/sprite3d/Sprite3DFactory');
-    Phaser.GameObjects.Creators.Sprite3D = require('../plugins/camera3d/src/sprite3d/Sprite3DCreator');
-}
-
-if (typeof PLUGIN_FBINSTANT)
-{
-    Phaser.FacebookInstantGamesPlugin = require('../plugins/fbinstant/src/FacebookInstantGamesPlugin');
-}
+// if (typeof FEATURE_SOUND)
+// {
+//     Phaser.Sound = require('./sound');
+// }
+//
+// if (typeof PLUGIN_CAMERA3D)
+// {
+//     Phaser.Cameras.Sprite3D = require('../plugins/camera3d/src');
+//     Phaser.GameObjects.Sprite3D = require('../plugins/camera3d/src/sprite3d/Sprite3D');
+//     Phaser.GameObjects.Factories.Sprite3D = require('../plugins/camera3d/src/sprite3d/Sprite3DFactory');
+//     Phaser.GameObjects.Creators.Sprite3D = require('../plugins/camera3d/src/sprite3d/Sprite3DCreator');
+// }
+//
+// if (typeof PLUGIN_FBINSTANT)
+// {
+//     Phaser.FacebookInstantGamesPlugin = require('../plugins/fbinstant/src/FacebookInstantGamesPlugin');
+// }
 
 //   Merge in the consts
 
@@ -76,7 +76,7 @@ Phaser = Extend(false, Phaser, CONST);
 
 /**
  * The root types namespace.
- * 
+ *
  * @namespace Phaser.Types
  * @since 3.17.0
  */

@@ -28,15 +28,15 @@ var TextureManager = require('../textures/TextureManager');
 var TimeStep = require('./TimeStep');
 var VisibilityHandler = require('./VisibilityHandler');
 
-if (typeof FEATURE_SOUND)
-{
-    var SoundManagerCreator = require('../sound/SoundManagerCreator');
-}
-
-if (typeof PLUGIN_FBINSTANT)
-{
-    var FacebookInstantGamesPlugin = require('../../plugins/fbinstant/src/FacebookInstantGamesPlugin');
-}
+// if (typeof FEATURE_SOUND)
+// {
+//     var SoundManagerCreator = require('../sound/SoundManagerCreator');
+// }
+//
+// if (typeof PLUGIN_FBINSTANT)
+// {
+//     var FacebookInstantGamesPlugin = require('../../plugins/fbinstant/src/FacebookInstantGamesPlugin');
+// }
 
 /**
  * @classdesc
@@ -253,10 +253,10 @@ var Game = new Class({
          */
         this.sound = null;
 
-        if (typeof FEATURE_SOUND)
-        {
-            this.sound = SoundManagerCreator.create(this);
-        }
+        // if (typeof FEATURE_SOUND)
+        // {
+        //     this.sound = SoundManagerCreator.create(this);
+        // }
 
         /**
          * An instance of the Time Step.
@@ -282,20 +282,20 @@ var Game = new Class({
          */
         this.plugins = new PluginManager(this, this.config);
 
-        if (typeof PLUGIN_FBINSTANT)
-        {
-            /**
-             * An instance of the Facebook Instant Games Plugin.
-             *
-             * This will only be available if the plugin has been built into Phaser,
-             * or you're using the special Facebook Instant Games custom build.
-             *
-             * @name Phaser.Game#facebook
-             * @type {Phaser.FacebookInstantGamesPlugin}
-             * @since 3.13.0
-             */
-            this.facebook = new FacebookInstantGamesPlugin(this);
-        }
+        // if (typeof PLUGIN_FBINSTANT)
+        // {
+        //     /**
+        //      * An instance of the Facebook Instant Games Plugin.
+        //      *
+        //      * This will only be available if the plugin has been built into Phaser,
+        //      * or you're using the special Facebook Instant Games custom build.
+        //      *
+        //      * @name Phaser.Game#facebook
+        //      * @type {Phaser.FacebookInstantGamesPlugin}
+        //      * @since 3.13.0
+        //      */
+        //     this.facebook = new FacebookInstantGamesPlugin(this);
+        // }
 
         /**
          * Is this Game pending destruction at the start of the next frame?
@@ -672,7 +672,7 @@ var Game = new Class({
     runDestroy: function ()
     {
         this.scene.destroy();
-        
+
         this.events.emit(Events.DESTROY);
 
         this.events.removeAllListeners();

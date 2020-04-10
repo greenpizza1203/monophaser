@@ -21,10 +21,10 @@ var Loader = {
     FileTypesManager: require('./FileTypesManager'),
     GetURL: require('./GetURL'),
     LoaderPlugin: require('./LoaderPlugin'),
-    MergeXHRSettings: require('./MergeXHRSettings'),
-    MultiFile: require('./MultiFile'),
-    XHRLoader: require('./XHRLoader'),
-    XHRSettings: require('./XHRSettings')
+    // MergeXHRSettings: require('./MergeXHRSettings'),
+    // MultiFile: require('./MultiFile'),
+    // XHRLoader: require('./XHRLoader'),
+    // XHRSettings: require('./XHRSettings')
 
 };
 
