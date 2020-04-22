@@ -36,24 +36,6 @@ var DebugHeader = function (game)
         renderType = 'Headless';
     }
 
-    var audioConfig = config.audio;
-    var deviceAudio = game.device.audio;
-
-    var audioType;
-
-    if (deviceAudio.webAudio && !(audioConfig && audioConfig.disableWebAudio))
-    {
-        audioType = 'Web Audio';
-    }
-    else if ((audioConfig && audioConfig.noAudio) || (!deviceAudio.webAudio && !deviceAudio.audioData))
-    {
-        audioType = 'No Audio';
-    }
-    else
-    {
-        audioType = 'HTML5 Audio';
-    }
-
     if (!game.device.browser.ie)
     {
         var c = '';
@@ -84,8 +66,7 @@ var DebugHeader = function (game)
         }
 
         //  URL link background color (always white)
-        args.push('background: #fff');
-
+        // args.push('background: #000');
         if (config.gameTitle)
         {
             c = c.concat(config.gameTitle);
@@ -101,14 +82,12 @@ var DebugHeader = function (game)
             }
         }
 
-        var fb = (typeof PLUGIN_FBINSTANT) ? '-FB' : '';
-
         if (!config.hidePhaser)
         {
-            c = c.concat('Phaser v' + CONST.VERSION + fb + ' (' + renderType + ' | ' + audioType + ')');
+            c = c.concat('Phaser v' + CONST.VERSION + ' (' + renderType + ')');
         }
 
-        c = c.concat(' %c ' + config.gameURL);
+        // c = c.concat(' %c');
 
         //  Inject the new string back into the args array
         args[0] = c;

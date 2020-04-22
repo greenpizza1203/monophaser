@@ -82,7 +82,6 @@ Phaser = Extend(false, Phaser, CONST);
  */
 
 //  Export it
-
 module.exports = Phaser;
 
 global.Phaser = Phaser;

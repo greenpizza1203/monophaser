@@ -63,7 +63,7 @@ var GameObjects = {
         Container: require('./container/ContainerFactory'),
         DOMElement: require('./domelement/DOMElementFactory'),
         DynamicBitmapText: require('./bitmaptext/dynamic/DynamicBitmapTextFactory'),
-        // Extern: require('./extern/ExternFactory'),
+        Extern: require('./extern/ExternFactory'),
         // Graphics: require('./graphics/GraphicsFactory'),
         Group: require('./group/GroupFactory'),
         Image: require('./image/ImageFactory'),
