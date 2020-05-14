@@ -17,7 +17,7 @@ var Phaser = {
 
     Actions: require('./actions'),
     Animations: require('./animations'),
-    BlendModes: require('./renderer/BlendModes'),
+    // BlendModes: require('./renderer/BlendModes'),
     Cache: require('./cache'),
     Cameras: require('./cameras'),
     Core: require('./core'),
